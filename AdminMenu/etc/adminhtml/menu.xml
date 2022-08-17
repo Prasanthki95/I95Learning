@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="I95Learning_AdminMenu::helloworld" title="I95dev" module="I95Learning_AdminMenu" sortOrder="51" resource="I95Learning_AdminMenu::helloworld"/>
+        <add id="I95Learning_AdminMenu::post" title="Manage Posts" module="I95Learning_AdminMenu" sortOrder="10" action="i95Learning_adminMenu/post" resource="I95Learning_AdminMenu::post" parent="I95Learning_AdminMenu::helloworld"/>
+        <add id="I95Learning_AdminMenu::hello_configuration" title="Configuration" module="I95Learning_AdminMenu" sortOrder="99" parent="I95Learning_AdminMenu::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="I95Learning_AdminMenu::hello_configuration"/>
+    </menu>
+</config>
