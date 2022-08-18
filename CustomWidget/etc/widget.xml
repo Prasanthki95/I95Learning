@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:helloworld:Magento_Widget:etc/widget.xsd">
+    <widget class="I95Learning\CustomWidget\Block\Widget\Posts" id="i95_Widget_posts">
+        <label>I95 Widget</label>
+        <description>Posts</description>
+        <parameters>
+            <parameter name="posts" sort_order="10" visible="true" xsi:type="text">
+                <label>Custom I95 Label</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
