@@ -1,0 +1,12 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">https://meet.google.com/ddx-yvpo-wwq
+<body>
+    <referenceBlock name="customer_account_navigation">
+        <block class="Magento\Framework\View\Element\Html\Link\Current" name="custom-link">
+            <arguments>
+<!--                <argument name="path" xsi:type="string">I95Learning/AddNavDashboard/controller/action</argument>-->
+                <argument name="label" xsi:type="string">Custom Menu</argument>
+            </arguments>
+        </block>
+    </referenceBlock>
+</body>
+</page>
