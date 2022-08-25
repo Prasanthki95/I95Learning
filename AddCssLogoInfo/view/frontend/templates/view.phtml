@@ -1,0 +1,20 @@
+<?php
+echo $block->getLogoSrc() . '<br />';
+echo $block->getLogoAlt() . '<br />';
+echo $block->getLogoWidth() . '<br />';
+echo $block->getLogoHeight() . '<br />';
+
+// $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+// $resource = $objectManager->create('Magento\CatalogInventory\Model\ResourceModel\Stock\Item');
+// $select = $resource->getConnection()->select()->from($resource->getMainTable());
+// $stockItems = $resource->getConnection()->fetchAll($select);
+// foreach($stockItems as $_item){
+//     echo $_item->getData();
+// }
+// echo $stockItems[0]->getData();
+	
+$objectManager =  \Magento\Framework\App\ObjectManager::getInstance(); 
+$stockItem = $objectManager->get('\Magento\CatalogInventory\Model\Stock\StockItemRepository');
+$productId = 1; // YOUR PRODUCT ID
+$productStock = $stockItem->get($productId);
+var_dump($productStock->getData());

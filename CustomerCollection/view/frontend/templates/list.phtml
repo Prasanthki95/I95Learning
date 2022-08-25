@@ -1,0 +1,10 @@
+<?php
+$custID = 1;
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerObj = $objectManager->create('Magento\Customer\Model\Customer')
+->load($custID);
+$customerEmail = $customerObj->getEmail();
+$customerFirstName = $customerObj->getFirstname();
+echo "customer FirstName :" ." ". $customerFirstName."</br>";
+echo "customer email : " ." ". $customerEmail;
+?>
